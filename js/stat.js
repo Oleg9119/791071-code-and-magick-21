@@ -16,7 +16,7 @@ const TEXT_GAP = 5;
 const Font = {
   HEIGHT: 16,
   COLOR: `#000000`,
-  FONT_FAMILY: 'PT Mono'
+  FAMILY: 'PT Mono'
 };
 
 const TEXT_X = Cloud.X + CONTENT_GAP;
@@ -40,7 +40,7 @@ const renderCloud = (ctx, x, y, color) => {
 
 const renderText = (ctx, x, y, text) => {
   ctx.fillStyle = Font.COLOR;
-  ctx.font = `${Font.HEIGHT}px ${Font.FONT_FAMILY}`;
+  ctx.font = `${Font.HEIGHT}px ${Font.FAMILY}`;
   ctx.fillText(text, x, y);
 };
 
